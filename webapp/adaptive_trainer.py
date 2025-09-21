@@ -5,7 +5,7 @@ from memory_store import store_learning_memory, retrieve_related_memory
 # Gemini model configuration
 import os
 import google.generativeai as genai
-GEMINI_API_KEY =  "AIzaSyCL2sH4zH8H191xqYuRdzgwzRh8vix2Kw0"
+GEMINI_API_KEY =  "your-api-key"
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
