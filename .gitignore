@@ -1,0 +1,51 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+
+# Jupyter/IPython
+.ipynb_checkpoints
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# VSCode or JetBrains project settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python environment files
+*.env
+.env
+.env.*
+
+# ChromaDB persistent files
+chroma_storage/
+*.duckdb
+*.parquet
+
+# Streamlit config and cache
+.streamlit/
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# Pip download cache
+pip-wheel-metadata/
+
+# Logs and output
+*.log
+*.out
+*.bak
+
+# Credentials or API keys
+openai_key.txt

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Education Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Study-themed SVG background -->
+    <div class="background-svg">
+        <svg width="100%" height="100%" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; z-index:0; top:0; left:0;">
+            <ellipse cx="200" cy="120" rx="180" ry="80" fill="#b2f2c8" fill-opacity="0.18"/>
+            <ellipse cx="1240" cy="180" rx="160" ry="70" fill="#a5d6a7" fill-opacity="0.13"/>
+            <ellipse cx="400" cy="800" rx="220" ry="90" fill="#43a047" fill-opacity="0.10"/>
+            <ellipse cx="1200" cy="750" rx="180" ry="80" fill="#388e3c" fill-opacity="0.10"/>
+            <!-- Book icon -->
+            <g>
+                <rect x="1100" y="80" width="80" height="50" rx="8" fill="#fff" stroke="#43a047" stroke-width="3"/>
+                <rect x="1110" y="90" width="60" height="30" rx="4" fill="#b2f2c8"/>
+                <line x1="1140" y1="90" x2="1140" y2="120" stroke="#43a047" stroke-width="2"/>
+            </g>
+            <!-- Graduation cap -->
+            <g>
+                <polygon points="200,200 250,180 300,200 250,220" fill="#388e3c"/>
+                <rect x="240" y="200" width="20" height="30" fill="#fff" stroke="#43a047" stroke-width="2"/>
+                <line x1="250" y1="230" x2="250" y2="245" stroke="#43a047" stroke-width="3"/>
+                <circle cx="250" cy="247" r="4" fill="#43a047"/>
+            </g>
+            <!-- Lightbulb (idea) -->
+            <g>
+                <ellipse cx="1300" cy="700" rx="22" ry="30" fill="#fffde7" stroke="#43a047" stroke-width="2"/>
+                <rect x="1288" y="730" width="24" height="10" rx="3" fill="#b2f2c8"/>
+                <line x1="1300" y1="740" x2="1300" y2="755" stroke="#43a047" stroke-width="2"/>
+            </g>
+        </svg>
+    </div>
+    <div class="container">
+        <header>
+            <h1>🎓 Adaptive Education Trainer</h1>
+            <p class="subtitle">Powered by Gemini + CrewAI + ChromaDB</p>
+        </header>
+        <main>
+            <section id="topic-section">
+                <label for="topic-input">Enter a topic to learn:</label>
+                <input type="text" id="topic-input" placeholder="e.g. Quantum Physics">
+                <div class="center-btn">
+                    <button id="start-btn">Start Learning</button>
+                </div>
+            </section>
+            <section id="lesson-section" class="hidden">
+                <h2>📘 Lesson</h2>
+                <div id="lesson-content"></div>
+            </section>
+            <section id="quiz-section" class="hidden">
+                <h2>❓ Quiz (MCQs Only)</h2>
+                <div id="quiz-content"></div>
+                <p class="tip">💡 <em>Write your answers like: 1. C, 2. A</em></p>
+                <textarea id="answers-input" rows="4" placeholder="Your answers..."></textarea>
+                <button id="submit-answers-btn">Submit Answers</button>
+            </section>
+            <section id="feedback-section" class="hidden">
+                <h2>✅ Feedback</h2>
+                <div id="feedback-content"></div>
+                <button id="retry-btn">📚 Learn Again with Emphasis on Weak Areas</button>
+            </section>
+            <section id="memory-section" class="hidden">
+                <h2>🧠 Related Past Feedback</h2>
+                <div id="memory-content"></div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
