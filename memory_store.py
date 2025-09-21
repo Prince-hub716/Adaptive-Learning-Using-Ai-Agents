@@ -3,7 +3,7 @@ import chromadb.utils.embedding_functions as embedding_functions
 
 # Setup embedding function with Gemini
 google_ef = embedding_functions.GoogleGenerativeAiEmbeddingFunction(
-    api_key="AIzaSyBSUjnGo14-Mn_o8BhjFhjP6HsYHHCu9Gg"
+    api_key="your-api-key"
 )
 
 # Initialize persistent ChromaDB client
